@@ -32,6 +32,7 @@ $app->add(function ($request, $handler) {
 $app->addBodyParsingMiddleware();
 $app->addRoutingMiddleware();
 $app->addErrorMiddleware(true, true, true);
+
 // enabling jwt authentication
 // $app->add(new Tuupola\Middleware\JwtAuthentication([
 //   "path" => ["/api", "/admin"],
