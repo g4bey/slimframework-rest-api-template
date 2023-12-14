@@ -40,7 +40,7 @@ $app->addErrorMiddleware(true, true, true);
 //  "secret" => "supersecretkeyyoushouldnotcommittogithub"
 // ]));
 
-// the group "/api" is not necessary.
+// using groups in not necessary
 $app->group('/api', function (RouteCollectorProxy $group) {
   $group->get('/hello/{name}', function (Request $request, Response $response, $args) {
       $data = array('name' => $args['name']);
